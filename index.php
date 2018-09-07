@@ -1,17 +1,28 @@
+<<<<<<< HEAD
 <?php include "includes/db.php"; ?>
 <?php include "includes/header.php"; ?>
 
     <!-- Navigation -->
 
 <?php include "includes/navigation.php"; ?>
+=======
+<?php include "includes/header.php" ?>
+
+    <!-- Navigation -->
+<? include "includes/navigation.php" ?>
+
+>>>>>>> 8a5415ef29bd9e6656055aec0f658fc601a2a38e
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
             <!-- Blog Entries Column -->
+<<<<<<< HEAD
             
             
+=======
+>>>>>>> 8a5415ef29bd9e6656055aec0f658fc601a2a38e
             <div class="col-md-8">
 
                 <h1 class="page-header">
@@ -34,17 +45,31 @@
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
+<<<<<<< HEAD
             </div>
             
             
 
             <!-- Blog Sidebar Widgets Column -->
 <?php include "includes/sidebar.php"; ?>
+=======
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+<?php include "includes/sidebar.php" ?>
+>>>>>>> 8a5415ef29bd9e6656055aec0f658fc601a2a38e
 
         </div>
         <!-- /.row -->
 
         <hr>
+<<<<<<< HEAD
 <?php include "includes/footer.php"; ?>
 
   
+=======
+
+        <!-- Footer -->
+<?php include "includes/footer.php" ?>
+>>>>>>> 8a5415ef29bd9e6656055aec0f658fc601a2a38e
