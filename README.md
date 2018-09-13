@@ -1,2 +1,2 @@
 # cms
-CMS Project- PHP for Beginners - Become a PHP Master /Udemy.com
+CMS Project - A practice project to build and break.
