@@ -42,9 +42,9 @@
 								</thead>
 								<tbody>
 
-									<?php findAllCategories(); ?>
+						<?php findAllCategories(); ?>
 
-									<?php deleteCategories(); ?>
+						<?php deleteCategories(); ?>
 
 								</tbody>
 							</table>

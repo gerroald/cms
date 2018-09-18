@@ -2,7 +2,7 @@
 
 function insert_categories(){
 
-							global $connection;
+	global $connection;
 
 							if(isset($_POST['submit'])) {
 
@@ -38,7 +38,7 @@ function findAllCategories() {
 									echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
 									echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
 									echo "</tr>";
-}
+									}
 }
 
 function editCategories() {
@@ -47,7 +47,7 @@ function editCategories() {
 								$cat_id = $_GET['edit'];
 
 								include "includes/admin_update_category.php";
-							}
+								}
 }
 
 function deleteCategories() {
@@ -58,8 +58,6 @@ function deleteCategories() {
 										$query = "DELETE FROM categories WHERE cat_id = {$the_cat_id} ";
 										$delete_query = mysqli_query($connection, $query);
 										header("Location: categories.php");
-
 									}
-
 }
 ?>
