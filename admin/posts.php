@@ -1,8 +1,8 @@
-<?php include "includes/admin_header.php" ?>
+<?php include "includes/admin_header.php"; ?>
 
 	<div id="wrapper">
 		<!-- Navigation -->
-<?php include "includes/admin_navigation.php" ?>
+<?php include "includes/admin_navigation.php"; ?>
 
 		<div id="page-wrapper">
 
@@ -22,9 +22,9 @@ if(isset($_GET['source'])) {
 } else {
 	$source = "";
 }
-switch($source = '34') {
-	case '34':
-		echo 'Nice, 34!';
+switch($source) {
+	case 'add_posts':
+		include "includes/add_post.php";
 		break;
 
 	case '100':
@@ -47,4 +47,4 @@ switch($source = '34') {
 			</div>
 			<!-- /.container-fluid -->
 
-<?php include "includes/admin_footer.php" ?>
+<?php include "includes/admin_footer.php"; ?>
