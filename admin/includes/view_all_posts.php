@@ -38,24 +38,16 @@ while($row =  mysqli_fetch_assoc($select_posts)) {
 	echo "<td>{$post_tags}</td>";
 	echo "<td>{$post_comment_count}</td>";
 	echo "<td>{$post_date}</td>";
+	echo "<td><a href='posts.php?source=edit_post&p_id={$post_id}'>Edit</a></td>";
 	echo "<td><a href='posts.php?delete={$post_id}'>Delete</a></td>";
 	echo "</tr>";
 }
 ?>
-								<td>20</td>
-								<td>Gerroald Barron</td>
-								<td>Bootstrap Framework</td>
-								<td>Bootstrap</td>
-								<td>Status</td>
-								<td>Image</td>
-								<td>Tags</td>
-								<td>Comments</td>
-								<td>Date</td>
-
 							</tbody>
 						</table>
 						
 <?php
+
 if(isset($_GET['delete'])) {
 
     $the_post_id = $_GET['delete'];
@@ -63,4 +55,5 @@ if(isset($_GET['delete'])) {
     $query = "DELETE FROM posts WHERE post_id = {$the_post_id}";
     $delete_query = mysqli_query($connection, $query);
 }
+
 ?>
