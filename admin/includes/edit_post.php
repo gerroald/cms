@@ -3,7 +3,7 @@
 if(isset($_GET['p_id'])) {
     $the_post_id = $_GET['p_id'];
 }
-$query = "SELECT * FROM posts";
+$query = "SELECT * FROM posts WHERE post_id = $the_post_id";
 $select_posts_by_id = mysqli_query($connection, $query);
 
 while($row =  mysqli_fetch_assoc($select_posts_by_id)) {
@@ -18,6 +18,19 @@ while($row =  mysqli_fetch_assoc($select_posts_by_id)) {
 	$post_comment_count = $row['post_comment_count'];
 	$post_date = $row['post_date'];
 }
+
+if(isset($_POST['create_post'])) {
+    
+    $post_title = $_POST['title'];
+    $post_author = $_POST['author'];
+    $post_category_id = $_POST['post_category_id'];
+    $post_status = $_POST['post_status'];
+    $post_image = $_FILES['image']['name'];
+    $post_image_temp = $_FILES['image']['tmp_name'];
+    $post_tags = $_POST['post_tags'];
+    $post_content = $_POST['post_content'];
+}
+
 ?>
    <form action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
